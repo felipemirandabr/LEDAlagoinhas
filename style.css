@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    background-image: url(assets/fundo-celular.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'roboto';
+    font-weight: 500;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+strong {
+    color: orange;
+}
+
+.cabecalho__texto {
+    font-size: 1.3em;
+}
+
+.titulo-secao {
+    margin: 50px 0 20px 0;
+}
+
+div.especialidades__container-botoes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: black;
+    font-weight: 700;
+    gap: 12px;
+    justify-content: center;
+}
+
+article.especialidades__botao {
+    background-color: white;
+    border-radius: 20px;
+    width: 185px;
+    height: 185px;
+    padding: 5px 5px 25px 5px;
+}
+
+.especialidades__container-imagem-botao {
+    display: flex;
+    height: 150px;
+    width: 185px;
+    align-items: center;
+    justify-content: center;
+}
+
+.especialidades__container-imagem-botao img {
+    max-width: 185px;
+    max-height: 185px;
+}
+
+.botao-mais {
+    background-color: orange;
+    width: 200px;
+    height: 50px;
+    font-family: 'roboto';
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+.marcas__logos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.marcas__logos img {
+    width: 185px;
+}
