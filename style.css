@@ -7,8 +7,8 @@ body {
     background-repeat: no-repeat;
     color: white;
     font-family: 'roboto';
-    font-weight: 500;
-    font-size: 1.5em;
+    font-weight: 400;
+    font-size: 1.4em;
     text-align: center;
 }
 
@@ -25,6 +25,11 @@ strong {
 }
 
 .titulo-secao {
+    font-size: 1.5em;
+    border-bottom: 5px solid orange;
+    color: orange;
+    font-weight: 600;
+    padding: 5px 0;
     margin: 50px 0 20px 0;
 }
 
@@ -35,29 +40,29 @@ div.especialidades__container-botoes {
     flex-direction: row;
     color: black;
     font-weight: 700;
-    gap: 12px;
+    gap: 15px;
     justify-content: center;
 }
 
 article.especialidades__botao {
-    background-color: white;
-    border-radius: 20px;
-    width: 175px;
-    height: 175px;
-    padding: 5px 5px 25px 5px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    width: 150px;
+    height: 150px;
+    padding: 5px 15px 25px 15px;
 }
 
 .especialidades__container-imagem-botao {
     display: flex;
-    height: 150px;
-    width: 170px;
+    height: 120px;
+    width: 150px;
     align-items: center;
     justify-content: center;
 }
 
 .especialidades__container-imagem-botao img {
-    max-width: 170px;
-    max-height: 170px;
+    max-width: 140px;
+    max-height: 100px;
 }
 
 .botao-mais {
