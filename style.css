@@ -22,16 +22,26 @@ strong {
 
 .cabecalho__texto {
     font-size: 1.3em;
+    font-weight: 600;
+    width: 95%;
 }
 
 .titulo-secao {
-    font-size: 1.5em;
-    border-bottom: 5px solid orange;
+    font-size: 1.2em;
     color: orange;
     font-weight: 600;
-    padding: 5px 0;
     margin: 50px 0 20px 0;
 }
+
+.especialidades .titulo-secao {
+    border-left: 150px solid orange;
+    border-right: 150px solid orange;
+}
+.marcas .titulo-secao {
+    border-left: 185px solid orange;
+    border-right: 185px solid orange;
+}
+
 
 div.especialidades__container-botoes {
     width: 100%;
