@@ -37,11 +37,17 @@ body {
     color: whitesmoke;
     font-size: 1.25em;
     background-color: black;
-    background-image: url(assets/fundo-celular.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/fundo-celular.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
     padding-bottom: 100px;
+}
+
+header {
+    text-align: center;
+    max-width: 1680px;
+    margin: auto;
 }
 
 .menu-checkbox {
@@ -59,8 +65,8 @@ body {
 
 .site-header__close-btn {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 5px;
+    right: 15px;
     font-size: 45px;
     color: goldenrod;
     cursor: pointer;
@@ -71,8 +77,8 @@ body {
     cursor: pointer;
     position: absolute;
     z-index: 3;
-    top: 15px;
-    right: 15px;
+    top: 0;
+    right: 0;
 }
 
 #site-header__menu-icon {
@@ -88,7 +94,7 @@ body {
 
 .site-header__menu {
     background-color: rgba(0, 0, 0, 0.747);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     z-index: 2;
@@ -116,6 +122,49 @@ body {
 .site-header__menu li:hover .site-header__menu__link {
     color: black;
     text-shadow: none;
+}
+
+.site-header__menu-desktop {
+    display: none;
+    background-color: goldenrod;
+    border-radius: 0 0 35px 35px ;
+    margin-bottom: 20px;
+}
+
+.site-header__menu-desktop li{
+    list-style-type: none;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.site-header__menu-desktop li:hover{
+    background-color: darkgoldenrod;
+    border-radius: 15px;
+}
+
+.site-header__menu-desktop__link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.site-header__menu-desktop li:hover .site-header__menu-desktop__link{
+    color: whitesmoke;
+}
+
+.site-header__nav-title {
+    background-color: goldenrod;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.site-header__nav-title h1{
+    padding-left: 10px;
+    color: black;
+    font-size: 1.25em;
+    font-weight: bold;
 }
 
 .site-header__text {
@@ -152,8 +201,11 @@ hr {
 }
 
 
-header, section {
+section {
     text-align: center;
+    padding: 10px;
+    max-width: 1680px;
+    margin: auto;
 }
 
 .specialties__container-cards {
@@ -168,7 +220,8 @@ header, section {
     color: black;
     font-weight: bold;
     border-radius: 15px;
-    width: 165px;
+    width: 160px;
+    padding: 5px;
 }
 
 .contact__container-cards {
@@ -193,6 +246,10 @@ header, section {
     margin: 10px;
 }
 
+.contact__card:hover{
+    background-color: whitesmoke;
+}
+
 .specialties__card-texto {
     border-radius: 0 0 15px 15px;
 }
@@ -200,8 +257,11 @@ header, section {
 .brands__container-logos{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 25px;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 25px;
 }
 
 .clients__container-cards {
@@ -246,4 +306,28 @@ header, section {
 .button-more a {
     text-decoration: none;
     color: black;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/fundo-tablet.png);
+    background-position: top center;
+    background-size: contain;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/fundo-desktop.png);
+    background-position: top center;
+    background-size: contain;
+    }
+
+    .site-header__menu-label {
+        display: none;
+    }
+    .site-header__menu-desktop{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
