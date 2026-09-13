@@ -7,66 +7,136 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu,thumb_up" />
 </head>
 <body>
-    <header class="cabecalho">
-        <img src="assets/logo-celular.png" alt="Logo da LED Alagoinhas" class="cabecalho__logo">
-        <p class="cabecalho__texto"><strong>Referência</strong> em iluminação, som, eletrônica e acessórios automotivos em <strong>Alagoinhas</strong></p>
+    <header class="site-header">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="site-header__menu-label">
+            <span class="material-symbols-outlined" id="site-header__menu-icon">menu</span>
+        </label>
+        <nav class="site-header__menu">
+            <label for="menu-toggle" class="site-header__close-btn">×</label>
+            <li><a href="index.html" class="site-header__menu__link">Início</a></li>
+            <li><a href="especialidades.html" class="site-header__menu__link">Especialidades</a></li>
+            <li><a href="marcas.html" class="site-header__menu__link">Marcas</a></li>
+            <li><a href="clientes.html" class="site-header__menu__link">Clientes</a></li>
+            <li><a href="contato.html" class="site-header__menu__link">Contato</a></li>
+        </nav>
+        <img class="site-header__logo" src="assets/logo-celular.png" alt="Logo da LED Alagoinhas">
+        <p class="site-header__text"><strong>Referência</strong> em iluminação, som, eletrônica e acessórios automotivos em <strong>Alagoinhas</strong></p>
     </header>
-    <section class="especialidades">
-        <p class="titulo-secao">Nossas Especialidades:</p>
-        <div class="especialidades__container-botoes">
-            <article class="especialidades__botao">
-                <div class="especialidades__container-imagem-botao"><img src="assets/led.png" alt="Lâmpada LED"></div>
-                <p class="especialidades__botao-texto">Iluminação</br>Automotiva</p>
+    <section class="specialties">
+        <div class="container-title">
+                <hr><h2 class="specialties_title">ESPECIALIDADES</h2><hr>
+        </div>
+        <div class="specialties__container-cards">
+            <article class="specialties__card">
+                <img class="specialties__card-icon" src="assets/led.png" alt="Lâmpada LED">
+                <p class="specialties__card-texto">Iluminação</br>Automotiva</p>
             </article>
-            <article class="especialidades__botao">
-                <div class="especialidades__container-imagem-botao"><img src="assets/som.png" alt="Alto-falante"></div>
-                <p class="especialidades__botao-texto">Som</br>Automotivo</p>
+            <article class="specialties__card">
+                <img class="specialties__card-icon" src="assets/som.png" alt="Alto-falante">
+                <p class="specialties__card-texto">Som</br>Automotivo</p>
             </article>
-            <article class="especialidades__botao">
-                <div class="especialidades__container-imagem-botao"><img src="assets/camera.png" alt="Lente de Câmera"></div>
-                <p class="especialidades__botao-texto">Câmera e</br>Sensor de Ré</p>
+            <article class="specialties__card">
+                <img class="specialties__card-icon" src="assets/camera.png" alt="Lente de Câmera">
+                <p class="specialties__card-texto">Câmera e</br>Sensor de Ré</p>
             </article>
-            <article class="especialidades__botao">
-                <div class="especialidades__container-imagem-botao"><img src="assets/multimidia.png" alt="GPS Central Multimídia"></div>
-                <p class="especialidades__botao-texto">Centrais</br>Multimídia</p>
+            <article class="specialties__card">
+                <img class="specialties__card-icon" src="assets/multimidia.png" alt="GPS Central Multimídia">
+                <p class="specialties__card-texto">Centrais</br>Multimídia</p>
             </article>
-            <article class="especialidades__botao">
-                <div class="especialidades__container-imagem-botao"><img src="assets/painel.png" alt="Painel Automotivo"></div>
-                <p class="especialidades__botao-texto">Painel</br>Eletrônico</p>
+            <article class="specialties__card">
+                <img class="specialties__card-icon" src="assets/painel.png" alt="Painel Automotivo">
+                <p class="specialties__card-texto">Painel</br>Eletrônico</p>
             </article>
-            <article class="especialidades__botao">
-                <div class="especialidades__container-imagem-botao"><img src="assets/vidro.png" alt="Vidro lateral com película"></div>
-                <p class="especialidades__botao-texto">Instalação de</br>Películas</p>
+            <article class="specialties__card">
+                <img class="specialties__card-icon" src="assets/vidro.png" alt="Vidro lateral com película">
+                <p class="specialties__card-texto">Instalação de</br>Películas</p>
             </article>
-            <article class="especialidades__botao">
-                <div class="especialidades__container-imagem-botao"><img src="assets/farol.png" alt="Farol de Carro"></div>
-                <p class="especialidades__botao-texto">Revitalização</br>de Faróis</p>
+            <article class="specialties__card">
+                <img class="specialties__card-icon" src="assets/farol.png" alt="Farol de Carro">
+                <p class="specialties__card-texto">Revitalização</br>de Faróis</p>
             </article>
-            <article class="especialidades__botao">
-                <div class="especialidades__container-imagem-botao"><img src="assets/carrocinha.png" alt="Reboque Automotivo"></div>
-                <p class="especialidades__botao-texto">Reboques e</br>Carrocinhas</p>
+            <article class="specialties__card">
+                <img class="specialties__card-icon" src="assets/carrocinha.png" alt="Reboque Automotivo">
+                <p class="specialties__card-texto">Reboques e</br>Carrocinhas</p>
             </article>
-            <article class="especialidades__botao">
-                <div class="especialidades__container-imagem-botao"><img src="assets/lampada.png" alt="Iluminação de Ambientes"></div>
-                <p class="especialidades__botao-texto">Iluminação de</br>Ambientes</p>
+            <article class="specialties__card">
+                <img class="specialties__card-icon" src="assets/lampada.png" alt="Iluminação de Ambientes">
+                <p class="specialties__card-texto">Iluminação de</br>Ambientes</p>
             </article>
         </div>
-        <button class="botao-mais">Saiba Mais</button>
+        <button class="specialties__button button-more"><a href="specialties.html">Saiba Mais</a></button>
     </section>
-    <section class="marcas">
-        <p class="titulo-secao">Marcas Parceiras:</p>
-        <div class="marcas__logos">
-            <img src="assets/asx.png" alt="Logo da ASX" class="marcas__logo">
-            <img src="assets/nox.png" alt="Logo da NOX" class="marcas__logo">
-            <img src="assets/centralsul.png" alt="Logo da CentralSul" class="marcas__logo">
-            <img src="assets/techone.png" alt="Logo da TechOne" class="marcas__logo">
-            <img src="assets/wintech.png" alt="Logo da Wintech" class="marcas__logo">
-            <img src="assets/bosch.png" alt="Logo da Bosch" class="marcas__logo">
+    <section class="brands">
+        <div class="container-title">
+            <hr><h2 class="brands__title">MARCAS</h2><hr>
+        </div>
+        <div class="brands__container-logos">
+            <a href="https://asx.com.br/" target="_blank" title="Ir ao site da ASX">
+                <img class="brands__logo" src="assets/asx.png" alt="Logo da ASX" class="brands__logo">
+            </a>
+            <a href="https://www.instagram.com/noxledautomotivo/" target="_blank" title="Ir ao Instagram da NOX">
+                <img class="brands__logo" src="assets/nox.png" alt="Logo da NOX" class="brands__logo">
+            </a>
+            <a href="https://centralsulquimica.com.br/" target="_blank" title="Ir ao site da CentralSul">
+                <img class="brands__logo" src="assets/centralsul.png" alt="Logo da CentralSul" class="brands__logo">
+            </a>
+            <a href="https://techone.com.br/" target="_blank" title="Ir ao site da TechOne">
+                <img class="brands__logo" src="assets/techone.png" alt="Logo da TechOne" class="brands__logo">
+            </a>
+            <a href="https://wintechimports.com/" target="_blank" title="Ir ao site da Wintech">
+                <img class="brands__logo" src="assets/wintech.png" alt="Logo da Wintech" class="brands__logo">
+            </a>
+            <a href="https://www.bosch.com.br/" target="_blank" title="Ir ao site da Bosch Brasil">
+                <img class="brands__logo" src="assets/bosch.png" alt="Logo da Bosch" class="brands__logo">
+            </a>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="container-title">
+            <hr><h2 class="clients_title">CLIENTES</h2><hr>
+        </div>
+        <div class="clients__container-cards">
+            <article class="clients__card">
+                    <span class="clients__number">98%</span>
+                    <p class="clients__text">Clientes Satisfeitos</p>
+            </article>
+            <article class="clients__card">
+                    <span class="clients__number">6 anos</span>
+                    <p class="clients__text">Atuação no Mercado</p>
+            </article>
+            <article class="clients__card">
+                    <span class="clients__number">+10.000</span>
+                    <p class="clients__text">Seriços Realizados</p>
+            </article>
+        </div>      
+    </section>
+    <section class="contact">
+        <div class="container-title">
+            <hr><h2 class="contact_title">CONTATO</h2><hr>
+        </div>
+        <div class="contact__container-cards">
+            <a class="contact__link" href="" alt="Fale conosco no Whatsapp">
+                <article class="contact__card">
+                    <img class="contact__icon" src="assets/whatsapp.png">
+                    <p class="contact__text">Whatsapp</p>
+                </article>
+            </a>
+            <a class="contact__link" href="" alt="Acesso nosso Instagram">
+                <article class="contact__card">
+                    <img class="contact__icon" src="assets/instagram.png">
+                    <p class="contact__text">Instagram</p>
+                </article>
+            </a>
+            <a class="contact__link" href="" alt="Veja como chegar à nossa loja"></a>
+                <article class="contact__card">
+                    <img class="contact__icon" src="assets/google-maps.png" >
+                    <p class="contact__text">Localização</p>
+                </article>
+            </a>
         </div>
     </section>
 </body>

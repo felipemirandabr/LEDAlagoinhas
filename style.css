@@ -1,102 +1,249 @@
-@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 body {
+    font-family: "Quantico";
+    color: whitesmoke;
+    font-size: 1.25em;
     background-color: black;
     background-image: url(assets/fundo-celular.png);
-    background-size: contain;
     background-repeat: no-repeat;
-    color: white;
-    font-family: 'roboto';
-    font-weight: 400;
-    font-size: 1.4em;
+    background-size: contain;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.menu-checkbox {
+    display: none;
+    margin-top: 50px;
+}
+
+.menu-checkbox:checked ~ .site-header__menu {
+    display: block;
+}
+
+.menu-checkbox:checked ~ .site-header__menu-label {
+    display: none;
+}
+
+.site-header__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 45px;
+    color: goldenrod;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.site-header__menu-label {
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 15px;
+    right: 15px;
+}
+
+#site-header__menu-icon {
+    color: goldenrod;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+}
+
+.site-header__menu {
+    background-color: rgba(0, 0, 0, 0.747);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+
+.site-header__menu li {
+    padding: 15px 0;
+    border-right: 5px solid goldenrod;
+    margin: 15px 0;
+}
+
+.site-header__menu__link {
+    text-decoration: none;
+    color: goldenrod;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+.site-header__menu li:hover{
+    background-color: goldenrod;
+}
+
+.site-header__menu li:hover .site-header__menu__link {
+    color: black;
+    text-shadow: none;
+}
+
+.site-header__text {
+    font-size: 1.45em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    padding: 5px;
+}
+
+.site-header__text strong{
+    font-weight: bold;
+    color:goldenrod;
+}
+
+.container-title {
+    display: flex;
+    margin: 30px 0 15px 0;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: goldenrod;
+    padding: 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+hr {
+    width: 100%;
+    border: 3px solid goldenrod;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+
+header, section {
     text-align: center;
 }
 
-strong {
-    color: orange;
-}
-
-.cabecalho img {
-    width: 360px;
-}
-
-.cabecalho__texto {
-    font-size: 1.3em;
-    font-weight: 600;
-    width: 95%;
-}
-
-.titulo-secao {
-    font-size: 1.2em;
-    color: orange;
-    font-weight: 600;
-    margin: 50px 0 20px 0;
-}
-
-.especialidades .titulo-secao {
-    border-left: 150px solid orange;
-    border-right: 150px solid orange;
-}
-.marcas .titulo-secao {
-    border-left: 185px solid orange;
-    border-right: 185px solid orange;
-}
-
-
-div.especialidades__container-botoes {
-    width: 100%;
+.specialties__container-cards {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    color: black;
-    font-weight: 700;
     gap: 15px;
     justify-content: center;
 }
 
-article.especialidades__botao {
+.specialties__card{
     background-color: whitesmoke;
-    border-radius: 30px;
-    width: 150px;
-    height: 150px;
-    padding: 5px 15px 25px 15px;
-}
-
-.especialidades__container-imagem-botao {
-    display: flex;
-    height: 120px;
-    width: 150px;
-    align-items: center;
-    justify-content: center;
-}
-
-.especialidades__container-imagem-botao img {
-    max-width: 140px;
-    max-height: 100px;
-}
-
-.botao-mais {
-    background-color: orange;
-    width: 200px;
-    height: 50px;
-    font-family: 'roboto';
-    font-size: 1em;
-    font-weight: 700;
     color: black;
-    border-radius: 10px;
-    border: none;
-    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 165px;
 }
 
-.marcas__logos {
+.contact__container-cards {
     display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    justify-content: center;
 }
 
-.marcas__logos img {
-    width: 170px;
+.contact__card{
+    background-color: goldenrod;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 75px;
+    width: 300px;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+.specialties__card-texto {
+    border-radius: 0 0 15px 15px;
+}
+
+.brands__container-logos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.clients__container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.75em;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients__card {
+    color: goldenrod;
+}
+
+.clients__number {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.contact__link {
+    text-decoration: none;
+    color: black;
+}
+
+.button-more {
+    background-color: goldenrod;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Quantico';
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 165px;
+    padding: 5px 0;
+    margin-top: 15px;
+}
+
+.button-more:hover {
+    background-color: darkgoldenrod;
+}
+
+.button-more a {
+    text-decoration: none;
+    color: black;
 }
