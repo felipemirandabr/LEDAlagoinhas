@@ -1,0 +1,53 @@
+.contact__title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 40px 0 20px 0;
+}
+.contact__title-container h2 {
+    font-size: 2.5em;
+    white-space: nowrap;
+}
+
+.contact__title-container hr {
+    display: block;
+    border: 5px solid goldenrod;
+}
+
+
+.contact__map {
+    width: 95%;
+    aspect-ratio: 3 / 2;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.contact__map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.contact__instagram {
+    width: 95%;
+    aspect-ratio: 40/33;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.instagram-media {
+    width: 100%;
+    height: 100%;
+}
+
+.contact__whatsapp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__whatsapp .contact__card {
+    width: 370px;
+}

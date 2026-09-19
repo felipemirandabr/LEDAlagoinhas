@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="specialties.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu,thumb_up" />
 </head>
 <body>
@@ -20,7 +21,7 @@
         </nav>
         <input type="checkbox" id="menu-toggle" class="menu-checkbox">
         <label for="menu-toggle" class="site-header__menu-label">
-            <span class="material-symbols-outlined" id="site-header__menu-icon">menu</span>
+            <span class="material-symbols-outlined" id="site-header__menu-icon" style="color: black;text-shadow: none">menu</span>
         </label>
         <nav class="site-header__menu">
             <label for="menu-toggle" class="site-header__close-btn">×</label>
@@ -36,70 +37,91 @@
         </div>
     </header>
     <section class="specialties">
-        <div class="specialties__container-cards">
-            <article class="specialties__card">
-                <img class="specialties__card-icon" src="assets/led.png" alt="Lâmpada LED">
-                <p class="specialties__card-texto">Iluminação</br>Automotiva</p>
+            <article class="specialties__description">
+                <div class="specialties__title-container">
+                    <img class="specialties__icon" src="assets/led-s.png" alt="Lâmpada LED">
+                    <h2 class="specialties__title">Iluminação Automotiva</h2>
+                </div>
+                <ul>
+                    <li><strong>Upgrade e Substituição:</strong> Venda e instalação de lâmpadas LED, Super Brancas (Halógenas) e Xênon.</li>
+                    <li><strong>Retrofit e Personalização de Faróis:</strong> Instalação de projetores de LED/Bi-LED, customização de "Máscara Negra", anéis Angel Eyes, luz diurna (DRL) e setas conjugadas.</li>
+                    <li><strong>Faróis Auxiliares:</strong>Instalação de faróis de milha/neblina e adaptação de pestanas/molduras automotivas.</li>
+                </ul>
             </article>
-            <article class="specialties__card">
-                <img class="specialties__card-icon" src="assets/som.png" alt="Alto-falante">
-                <p class="specialties__card-texto">Som</br>Automotivo</p>
+            <article class="specialties__description">
+                <div class="specialties__title-container">
+                    <img class="specialties__icon" src="assets/som-s.png" alt="Alto-falante">
+                    <h2 class="specialties__title">Som Automotivo</h2>
+                </div>
+                <ul>
+                    <li><strong>Som Automotivo:</strong> Venda e instalação de aparelhos de rádio, alto-falantes, módulos de som e instalação de fitas LED ornamentais em som automotivo.</li>
+                </ul>
             </article>
-            <article class="specialties__card">
-                <img class="specialties__card-icon" src="assets/camera.png" alt="Lente de Câmera">
-                <p class="specialties__card-texto">Câmera e</br>Sensor de Ré</p>
+            <article class="specialties__description">
+                <div class="specialties__title-container">
+                    <img class="specialties__icon" src="assets/camera-s.png" alt="Lente de Câmera">
+                    <h2 class="specialties__title">Câmera e Sensor de Ré</h2>
+                </div>
+                <ul>
+                    <li><strong>Segurança e Estacionamento:</strong> Instalação e venda de câmeras automotivas (frontais e traseiras), além de sensores de ré.</li>
+                </ul>
             </article>
-            <article class="specialties__card">
-                <img class="specialties__card-icon" src="assets/multimidia.png" alt="GPS Central Multimídia">
-                <p class="specialties__card-texto">Centrais</br>Multimídia</p>
+            <article class="specialties__description">
+                <div class="specialties__title-container">
+                    <img class="specialties__icon" src="assets/multimidia-s.png" alt="GPS Central Multimídia">
+                    <h2 class="specialties__title">Centrais Multimídia</h2>
+                </div>
+                <ul>
+                    <li><strong>Centrais Multimídia:</strong> Venda e instalação de multimídias Android e desbloqueio de câmera de ré em centrais originais de fábrica.</li>
+                </ul>
             </article>
-            <article class="specialties__card">
-                <img class="specialties__card-icon" src="assets/painel.png" alt="Painel Automotivo">
-                <p class="specialties__card-texto">Painel</br>Eletrônico</p>
+            <article class="specialties__description">
+                <div class="specialties__title-container">
+                    <img class="specialties__icon" src="assets/painel-s.png" alt="Painel Automotivo">
+                    <h2 class="specialties__title">Painel Eletrônico</h2>
+                </div>
+                <ul>
+                    <li><strong>Reparo de Painéis:</strong> Troca de cabo flat, reparos em hodômetros (hodômetros) e substituição de película polarizadora.</li>
+                    <li><strong>Elétrica Específica:</strong> Reparo e troca de soquetes, troca de iluminação de painel e reparo de LEDs soldados em placas.</li>
+</li>
+                </ul>
             </article>
-            <article class="specialties__card">
-                <img class="specialties__card-icon" src="assets/vidro.png" alt="Vidro lateral com película">
-                <p class="specialties__card-texto">Instalação de</br>Películas</p>
+            <article class="specialties__description">
+                <div class="specialties__title-container">
+                    <img class="specialties__icon" src="assets/vidro-s.png" alt="Vidro lateral com película">
+                    <h2 class="specialties__title">Instalação de Películas</h2>
+                </div>
+                <ul>
+                    <li><strong>Instalação de Películas (Insulfilm):</strong> Aplicação de películas de proteção solar, privacidade e controle térmico em vidros automotivos.</li>
+                </ul>
             </article>
-            <article class="specialties__card">
-                <img class="specialties__card-icon" src="assets/farol.png" alt="Farol de Carro">
-                <p class="specialties__card-texto">Revitalização</br>de Faróis</p>
+            <article class="specialties__description">
+                <div class="specialties__title-container">
+                    <img class="specialties__icon" src="assets/farol-s.png" alt="Farol de Carro">
+                    <h2 class="specialties__title">Revitalização de Faróis</h2>
+                </div>
+                <ul>
+                    <li><strong>Estética e Recuperação de Faróis:</strong> Revitalização de lentes com aplicação de verniz UV, troca de lentes de faróis e regulação de facho de luz.</li>
+                </ul>
             </article>
-            <article class="specialties__card">
-                <img class="specialties__card-icon" src="assets/carrocinha.png" alt="Reboque Automotivo">
-                <p class="specialties__card-texto">Reboques e</br>Carrocinhas</p>
+            <article class="specialties__description">
+                <div class="specialties__title-container">
+                    <img class="specialties__icon" src="assets/carrocinha-s.png" alt="Reboque Automotivo">
+                    <h2 class="specialties__title">Reboques e Carrocinhas</h2>
+                </div>
+                <ul>
+                    <li><strong>Instalações Elétricas Diversas:</strong> Instalação elétrica de reboques e carrocinhas</li>
+                </ul>
             </article>
-            <article class="specialties__card">
-                <img class="specialties__card-icon" src="assets/lampada.png" alt="Iluminação de Ambientes">
-                <p class="specialties__card-texto">Iluminação de</br>Ambientes</p>
+            <article class="specialties__description">
+                <div class="specialties__title-container">
+                    <img class="specialties__icon" src="assets/lampada-s.png" alt="Iluminação de Ambientes">
+                    <h2 class="specialties__title">Iluminação de Ambientes</h2>
+                </div>
+                <ul>
+                    <li><strong>Iluminação de Ambientes:</strong> Instalação de fitas LED internas e externas (personalização interna).</li>
+                </ul>
             </article>
-        </div>
-        <button class="specialties__button button-more"><a href="specialties.html">Saiba Mais</a></button>
-    </section>
-    <section class="contact">
-        <div class="container-title">
-            <hr><h2 class="contact_title">CONTATO</h2><hr>
-        </div>
-        <div class="contact__container-cards">
-            <a class="contact__link" href="https://wa.me/5575983325971?text=Olá,%20gostaria%20de%20saber%20o%20valor%20de%20um%20produto/serviço!" alt="Fale conosco no Whatsapp" target="_blank">
-                <article class="contact__card">
-                    <img class="contact__icon" src="assets/whatsapp.png">
-                    <p class="contact__text">Whatsapp</p>
-                </article>
-            </a>
-            <a class="contact__link" href="https://www.instagram.com/ledalagoinhas/" alt="Acesso nosso Instagram" target="_blank">
-                <article class="contact__card">
-                    <img class="contact__icon" src="assets/instagram.png">
-                    <p class="contact__text">Instagram</p>
-                </article>
-            </a>
-            <a class="contact__link" href="https://maps.app.goo.gl/2jc26yun7DeWSofZ9" alt="Veja como chegar à nossa loja" target="_blank">
-                <article class="contact__card">
-                    <img class="contact__icon" src="assets/google-maps.png" >
-                    <p class="contact__text">Localização</p>
-                </article>
-            </a>
-        </div>
     </section>
 </body>
 </html>

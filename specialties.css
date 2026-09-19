@@ -1,0 +1,32 @@
+.specialties__description {
+    text-align: justify;
+}
+
+.specialties__description ul {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.25em;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.specialties__description li {
+    margin: 15px 0;
+}
+
+.specialties__description strong{
+    font-weight: bold;
+}
+
+.specialties__title-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.specialties__title {
+    font-size: 1.5em;
+}
