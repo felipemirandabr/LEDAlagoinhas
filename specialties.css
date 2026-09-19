@@ -2,16 +2,21 @@
     text-align: justify;
 }
 
-.specialties__description ul {
+.specialties__description-text {
     background-color: whitesmoke;
     color: black;
-    font-size: 1.25em;
-    padding: 5px 15px;
-    border-radius: 20px;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 15px;
+    line-height: 1.15em;
 }
 
-.specialties__description li {
-    margin: 15px 0;
+.specialties__description-text p {
+    margin: 0 0 20px 0;
+}
+
+.specialties__description-text p:last-child {
+    margin: 0;
 }
 
 .specialties__description strong{
@@ -24,7 +29,7 @@
     margin: 20px 0;
     background-color: black;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .specialties__title {

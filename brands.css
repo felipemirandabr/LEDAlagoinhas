@@ -15,12 +15,12 @@
     padding: 5px 15px;
     border-radius: 20px;
     text-align: justify;
-    line-height: 1.25em;
+    line-height: 1.15em;
 }
 
 .brands__card-text p {
     margin: 10px 0;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .brands__card-text strong {
