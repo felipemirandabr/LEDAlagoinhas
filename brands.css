@@ -6,15 +6,12 @@
 }
 
 .brands__container-logo hr {
-    display: block;
     border: 5px solid goldenrod;
-
 }
 
 .brands__card-text {
     background-color: whitesmoke;
     color: black;
-    font-size: 1.2em;
     padding: 5px 15px;
     border-radius: 20px;
     text-align: justify;
@@ -23,6 +20,7 @@
 
 .brands__card-text p {
     margin: 10px 0;
+    font-size: 1.2em;
 }
 
 .brands__card-text strong {

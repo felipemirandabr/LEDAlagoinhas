@@ -245,7 +245,7 @@ a:hover {
     border-radius: 10px;
     height: 75px;
     width: 300px;
-    font-size: 2em;
+    font-size: 1.85em;
     display: flex;
     align-items: center;
     align-content: center;
@@ -269,7 +269,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 25px;
+    padding: 25px 0;
 }
 
 .clients__container-cards {
@@ -325,6 +325,10 @@ a:hover {
 
     .site-header__nav-title h1{
         font-size: 2em;
+    }
+
+    .site-header__menu {
+        display: none;
     }
 }
 
